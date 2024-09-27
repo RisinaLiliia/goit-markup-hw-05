@@ -586,7 +586,76 @@ footer {
   fill: #f4f4fd;
 }
 
-/* Style Modal */
+.footer-subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: auto;
+}
+
+.input-subscription {
+  display: flex; /* Используем Flexbox для горизонтального выравнивания */
+  align-items: center; /* Центрируем по вертикали */
+  height: 40px;
+  gap: 16px;
+}
+
+.form-input-footer {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #2e2f42;
+  padding-left: 16px;
+  flex-grow: 1;
+}
+
+.form-input-footer::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.form-input-footer:focus,
+.form-input-footer:hover {
+  border-color: #31d0aa;
+  outline: none;
+}
+
+.footer-submit-btn {
+  display: flex; /* Выравниваем содержимое кнопки */
+  align-items: center; /* Центрируем текст и иконку по вертикали */
+  padding: 8px 24px;
+  background-color: #4d5ae5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 40px;
+  width: 165px;
+  gap: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-submit-btn:hover,
+.footer-submit-btn:focus {
+  background-color: #31d0aa;
+}
+
+/* Стили модального окна */
 
 .backdrop {
   position: fixed;
@@ -608,7 +677,6 @@ footer {
   pointer-events: auto;
 }
 
-/* Стили модального окна */
 .modal {
   position: absolute;
   top: 50%;
@@ -632,7 +700,6 @@ footer {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -646,39 +713,34 @@ footer {
 }
 
 .modal-close-btn:hover {
-    background-color: #404BBF; 
-    border: none;
-}
-
-.modal-close-btn:hover svg {
-  fill:  #f4f4fd;
+  background-color: #404bbf;
   border: none;
 }
 
+.modal-close-btn:hover svg {
+  fill: #f4f4fd;
+  border: none;
+}
 
 .title-modal-form {
   margin-bottom: 20px;
   text-align: center;
   font-weight: bold;
   color: #2e2f42;
-  margin-top: 48px; 
+  margin-top: 48px;
 
   font-weight: 500;
   font-size: 16px;
- line-height: 150%;
+  line-height: 150%;
   letter-spacing: 0.02em;
- text-align: center;
- color: #2e2f42;
+  text-align: center;
+  color: #2e2f42;
 }
-
-
 
 /* Вводные поля */
 
-.form-field{
-
-margin-bottom: -6px;
-
+.form-field {
+  margin-bottom: -6px;
 }
 
 .form-label {
@@ -699,49 +761,50 @@ margin-bottom: -6px;
 .form-input {
   width: 100%;
   padding: 16px 16px 16px 40px;
-   border: 1px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 12px;
-line-height: 117%;
-letter-spacing: 0.04em;
-color: rgba(46, 47, 66, 0.4);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .form-icon {
   position: absolute;
-  left: 16px; 
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
   fill: #6e6e6e;
-  pointer-events: none; 
+  pointer-events: none;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:hover,
 .form-input:focus {
-  border: 1px solid #4D5AE5;
+  border: 1px solid #4d5ae5;
+  outline: none;
 }
 
 .form-icon:hover,
-.form-icon:focus{
-  fill: #4D5AE5;
+.form-icon:focus {
+  fill: #4d5ae5;
 }
 
 .input-wrapper:hover .form-icon,
 .form-input:focus + .form-icon {
-  fill: #4D5AE5; 
+  fill: #4d5ae5;
+  outline: none;
 }
 
 .form-input {
-  padding-left: 40px; 
-
+  padding-left: 40px;
 }
 
 textarea.form-input {
-  padding-left: 16px; 
+  padding-left: 16px;
   resize: none;
   width: 100%;
   height: 120px;
@@ -751,11 +814,11 @@ textarea.form-input {
   display: flex;
   align-items: center;
   margin-top: 16px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .checkbox-input {
-    display: none; /* Скрываем оригинальный чекбокс */
+  display: none; /* Скрываем оригинальный чекбокс */
 }
 
 .checkbox-icon {
@@ -768,32 +831,31 @@ textarea.form-input {
   border-radius: 2px;
   fill: #fcfcfc;
   border: 1px solid rgba(46, 47, 66, 0.4);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-input:checked + label > .checkbox-icon {
-    background-color: #404BBF; /* Цвет фона при активации */
-    fill: #f4f4fd; /* Цвет заливки при активации */
+  background-color: #404bbf; /* Цвет фона при активации */
+  fill: #f4f4fd; /* Цвет заливки при активации */
 }
 
 .accept-policy {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 117%;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-      display: flex; /* Используем flex для выравнивания элементов в одной строке */
-      align-items: center; /* Центрируем элементы по вертикали */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: flex; /* Используем flex для выравнивания элементов в одной строке */
+  align-items: center; /* Центрируем элементы по вертикали */
 }
 
 .privacy-link {
-    line-height: 133%;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: #4d5ae5;
+  line-height: 133%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
 }
-
-
 
 /* Кнопка отправки */
 .submit-btn {
@@ -813,7 +875,8 @@ textarea.form-input {
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
