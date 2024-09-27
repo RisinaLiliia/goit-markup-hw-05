@@ -15,4 +15,8 @@
     // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
     refs.modal.classList.toggle("is-open");
   }
+
+  function closeModal() {
+    refs.modal.classList.remove("is-open"); // Убираем класс is-open для закрытия модального окна
+  }
 })();
