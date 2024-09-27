@@ -594,7 +594,7 @@ footer {
   margin-left: auto;
 }
 
-.input-subscription {
+.subscription-form {
   display: flex;
   align-items: center;
   height: 40px;
@@ -857,7 +857,7 @@ textarea.form-input:focus {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
-  margin-right: 8px;
+  margin-right: 8зч;
 }
 
 .checkbox-input:checked + label > .checkbox-icon {
