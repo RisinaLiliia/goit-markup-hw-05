@@ -631,6 +631,7 @@ footer {
 
 .footer-submit-btn {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 8px 24px;
   background-color: #4d5ae5;
