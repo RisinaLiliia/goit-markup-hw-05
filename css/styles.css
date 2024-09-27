@@ -883,6 +883,7 @@ textarea.form-input:focus {
   background-color: var(--checkbox-bg-checked, #404bbf);
   border: none;
   fill: var(--checkbox-icon-checked, #f4f4fd);
+  display: inline-flex;
 }
 
 .accept-policy {
@@ -892,12 +893,14 @@ textarea.form-input:focus {
   color: var(--label-color, #8e8f99);
   display: flex;
   align-items: center;
+  display: inline-flex;
 }
 
 .privacy-link {
   color: var(--link-color, #4d5ae5);
   text-decoration: underline;
   text-decoration-skip-ink: none;
+  display: inline-flex;
 }
 
 /* Кнопка отправки */
